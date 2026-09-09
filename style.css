@@ -59,6 +59,7 @@ h1 {
 /* Стриминговые платформы */
 .stream-platforms {
   display: flex;
+  justify-content: space-between;
   gap: 8px;
   margin-bottom: 1rem;
   flex-wrap: nowrap;
@@ -140,7 +141,8 @@ h1 {
 }
 
 .link-btn:hover i,
-.link-btn:hover .boosty-icon {
+.link-btn:hover .boosty-icon,
+.link-btn:hover .yandex-music-icon {
   transform: scale(1.1);
 }
 
@@ -190,4 +192,13 @@ h1 {
 .goodgame-icon {
   width: 28px;  /* больше стандартных 20px */
   height: 28px;
+}
+
+/* Иконка Яндекс Музыки в одной колонке с остальными соцсетями */
+.yandex-music-icon {
+  width: 24px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
 }
